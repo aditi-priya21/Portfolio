@@ -1,0 +1,299 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+background-image: -webkit-radial-gradient(rgb(10, 10, 154),rgb(1, 1, 80));
+    margin: 0px;
+    padding: 0px;  
+}
+.box{
+    display: grid;
+    grid-template-columns:repeat(10,10vw) ;
+    grid-template-rows: repeat(10,10vh);
+}
+.box3{
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+.box31{
+    height: 20px;
+    width: 20px;
+   animation: box31 1s infinite ease-in-out;
+   position: relative;
+}
+.box31{
+    border-radius: 50%;
+    background-color: aquamarine; 
+    box-shadow: 0px 0px 10px 10px aquamarine;
+}
+@keyframes box31 {
+   0%, 100%{
+transform: translateY(0);
+   } 
+   50%{
+transform: translate(-300px);
+   }
+}
+.box4{
+    grid-row: 1/2;
+    grid-column: 3/5;
+    text-align: center; 
+}
+.box41{
+    color: rgb(0, 0, 134); 
+}
+.box41 h1{
+position: absolute;
+font-weight: 900;
+background: linear-gradient(rgb(96, 4, 4)19%,rgb(222, 222, 5));
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: box41  1s infinite;
+transform: scale(2);
+}
+ @keyframes box41 {
+    0%, 100%{
+        transform:scale(1);
+        opacity:1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+ }
+  .box5{
+grid-column: 2/3;
+grid-row: 4/5;
+}
+.box51{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: aliceblue; 
+    box-shadow: 0px 0px 10px 10px white;
+    animation: box51 5s infinite;
+}
+@keyframes box51 {
+    0%,100%{
+        transform: translateY(0);
+    }
+50%{
+    transform: translateY(100vh);
+}
+}
+.box5{
+    grid-column: 2/3;
+    grid-row: 4/5; 
+} 
+.box6{
+    height: 10px;
+    width: 120px;
+   background-image: linear-gradient(red,blue,yellow);
+    grid-row: 4/5;
+    grid-column: 3/5;
+    border-radius: 50px;
+    animation: box6 5s infinite;
+}
+@keyframes box6 {
+    0%,100%{
+        transform: translate(0deg);
+    }
+    20%{
+        transform: rotate(360deg);
+    }
+    40%{
+        transform: translateX(100px);
+    }
+    60%{
+        transform: translateY(100px);
+    }
+    80%{
+        transform: translateX(-100px);
+    }
+}
+.box7{
+    display: flex;
+    gap: 10px;
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.dot1{
+    height: 10px;
+    width: 10px;
+   background-color: white;
+   border-radius: 50px;
+   animation: dot1 2s ease infinite;
+   
+}
+.dot2{
+    height: 10px;
+    width: 10px;
+   background-color: white;
+   border-radius: 50px;
+   animation: dot2 2s ease infinite ;
+   animation-delay: 0.3s;
+}
+.dot3{
+    height: 10px;
+    width: 10px;
+   background-color: white;
+   border-radius: 50px;
+   animation: dot3 2s ease  infinite ;
+   animation-delay: 0.5s;
+   
+}
+@keyframes dot1 {
+    
+    50%{
+        transform: translateY(-20px);
+    }
+     100%  {
+        transform: translateY(20px);   
+    }
+}
+@keyframes dot2 {
+    50%{
+        transform: translateY(-20px);
+    }
+     100%  {
+        transform: translateY(20px);   
+    }
+}
+@keyframes dot3 {
+    
+    50%{
+        transform: translateY(-20px);
+    }
+     100%  {
+        transform: translateY(20px);   
+    }
+}
+.box8{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: box8 2s infinite;
+    margin-top: 400px;
+}
+.box81{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50% ;  
+    animation: box81 2s infinite;
+}
+@keyframes box8 {
+    from{
+        transform: rotate(0);
+    }
+to{
+    transform: rotate(360deg);
+}
+}
+.box9{
+    grid-column: 3/4;
+    grid-row: 8/11;
+}
+    
+
+.box91{
+    grid-column: 3/4;
+    grid-row: 8/11;
+    height: 30px;
+    width: 30px;
+    background-image: linear-gradient(red,yellow);
+    box-shadow: 0 0 0 2px red;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: box9 5s  ease infinite;
+   
+}
+@keyframes box9 {
+ 25%{
+        transform: rotate(0);
+    }
+50%{
+    transform: rotate(360deg);
+}
+100%{
+    transform: translate(130px);
+}
+}
+@keyframes box81 {
+   25%{
+    transform: translate(10px);
+   } 
+   50%{
+    transform: translateY(10px);
+   }
+75%{
+    transform: translateX(-10px);
+}
+100%{
+    transform: translateY(-10px);
+}
+}
+.box10{
+    grid-row: 1/2;
+    grid-column: 8/9;
+    background-color: rgb(183, 255, 0) ;
+    color: rgb(238, 187, 31);
+    border-radius: 20px;
+    outline: auto;
+    cursor: pointer;
+   box-shadow: 10px 10px 20px, 0px 0px 10px red ; 
+}
+.box10 h1:hover{
+    border-radius: 10px;
+    cursor: pointer;
+   background-color:  rgb(238, 187, 31) ;
+   color: rgb(183, 255, 0);
+   box-shadow: inset -10px -10px 20px ;
+   box-shadow: 0px 0px 10px red,10px 10px 20px;
+}
+
+.box12{
+    grid-row: 4/6;
+    grid-column: 10/11;
+    background-color: red;
+}
+.box12:hover{
+    border-radius: 50%;
+    background-image: conic-gradient(red,yellow,green);
+    transform: translateX(2px);
+    transition: 0.5s ease;
+}
+  
+.box121{
+    height: 50px;
+    width: 50px;
+    /* background-image: linear-gradient(red,yellow,green); */
+    background-color: red;
+    /* background-image: conic-gradient(red,yellow,green); */
+}
+.box11{
+    grid-column: 8/9;
+    grid-row: 8/10;
+    background-color: black;
+    border-radius: 30%;
+}
+.box11:hover{
+background-image: repeating-conic-gradient(brown 10deg,yellow 20deg);
+border-radius: 50%;
+transform: translateX(2px);
+transition: 0.5s ease;
+}
+.box13{
+    grid-row: 4/6;
+    grid-column: 7/8;
+    background-color: yellow;
+}
+.box13:hover{
+    background-image: repeating-conic-gradient(rgb(6, 4, 4) 10deg,yellow 20deg);
+    background-size: 20px ;
+
+    border-radius: 50%;
+    transform: translateX(2px);
+    transition: 0.5s ease;
+}
