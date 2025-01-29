@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    border: 0px;
+    height: 10vh;
+    width: 10vw;
+    position: relative;
+    background-color: brown;
+}
+
+.ball {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.ball2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+}
+
+.line {
+    height: 5px;
+    width: 100vw;
+    background-color: red;
+    background-image: linear-gradient(red, yellow, green);
+    animation: line 1s ease infinite;
+}
+
+.line1 {
+    height: 100vh;
+    width: 5px;
+    background-color: red;
+    background-image: linear-gradient(red, yellow, green);
+    animation: line1 1s ease infinite;
+}
+/* .bounce{
+    display: flex;
+    justify-content: center;
+} */
+.ball3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(blue,violet,black);
+    animation: ball3 3s ease infinite;
+    transform: translate(25px);
+}
+@keyframes ball3 {
+    10%{
+       transform: translateX(100px);
+    }  
+     20%{
+        transform: translateY(100px);
+     }  
+     40%{
+        transform: translateX(100vw); 
+     }  
+60%{
+    transform: translateY(100vh);   
+}
+80%{
+    transform: translateX(100vw);   
+}
+100%{
+    transform: translateX(100vw);  
+}
+}
+@keyframes line1 {
+    0%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes line {
+   0%{
+    transform: rotate(180deg); 
+   }  
+}

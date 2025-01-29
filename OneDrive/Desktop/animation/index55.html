@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body bgcolor="red">
+<fieldset> 
+<legend align="centre">Form</legend>
+<label>Name</label><br/>
+<input type="text" pattern="[a-zA-Z ]{5,40}" placeholder="Enter your Name" name="uname"/><br/><br/>
+<lable>Gender</lable><br/>
+<input type="radio"value="male" name="Gender"/>male
+<input type="radio"value="female" name="Gender"/>female
+<input type="radio"value="other" name="Gender"/>other
+<br/><br/>
+<lable>Phone Number</lable><br/>
+<input type="tel" pattern="[0-9]{10}" placeholder="Enter your Phone Number" name="uphone number"title="please enter 10 digits number"/><br/><br/>
+<h2>Local Adress</h2>
+<textarea placeholder="Must contain PIN"></textarea>
+<h2>Permanent Adress</h2>
+<textarea placeholder="Must contain PIN"></textarea><br/><br/>
+<label>Guardian</label><br/>
+<select>
+<option value="Mrs.">Mrs.</option>
+<option value="Mr.">Mr.</option>
+</select>
+<input type ="text" pattern="[a-zA-Z ]" placeholder="Name"/>
+<select>
+<option value="Mother">Mother</option>
+<option value="Father">Father</option>
+</select><br/><br/><br/>
+<lable>Local Guardian</label><br/>
+<input type ="text" placeholder="Name"/>
+<input type ="text" placeholder="Relation with them"/><br/><br/>
+<lable>Country</lable><br/>
+<select>
+<option value="---select country---">---select country---</option>
+<option value="India">India</option>
+<option value="nepal">nepal</option>
+<option value="pakistan">pakistan</option>
+<option value="china">china</option>
+<option value="bangladesh">bangladesh</option>
+</select><br/><br/>
+<lable>State</lable><br/>
+<input type="text" list="state"/>
+<datalist id="state">
+<option value="---select state---"/>
+<option value="jharkhand"/>
+<option value="west bengal"/>
+<option value="bihar"/>
+<option value="odisha"/>
+<option value="uttar pradesh"/>
+</datalist><br/><br/>
+<label>email</label><br/>
+<input type="email" required placeholder="Enter eamil" title="adfdf@gmail.com"/><br/><br/>
+<h3>Rate My Form</h3>
+<input type="range"/><br/><br/>
+<button type="submit" background color="yellow">Ready to Go</button>
+<button type="submit" background color="red">sumbit</button>
+
+
+
+
+
+
+
+
+
+
+
+

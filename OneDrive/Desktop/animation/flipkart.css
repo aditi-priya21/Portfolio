@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: -webkit-linear-gradient(90deg, rgb(49, 122, 135) 6%, rgb(98, 215, 241) 11%, rgb(61, 155, 214));
+}
+body {
+    margin: 0%;
+}
+.header img {
+    height: 50px;
+    border-radius: 10%;
+    margin: 2px;    
+}
+a{
+    text-decoration: none;
+}
+
+i{
+    padding: 15px;
+}
+.location{
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    background-color: rgb(106, 215, 249);
+}
+.Brandmall{
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    margin: 5px;
+    margin-left: 25px;
+   
+}
+.button1{
+    height: px;
+    width: 60px;
+    background-color: rgb(158, 160, 160);
+    border-radius: 100px;
+    margin-left: 50px;
+   
+}
+button{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(251, 243, 243);
+    border-radius: 100px;
+   
+}
+.search{
+    border: 2px solid blue;
+    border-radius: 8px;
+   justify-content: space-between;
+   display: flex;
+   margin: 5px;
+  
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px,100px,100px;
+    grid-template-rows: 100px,100px,100px ;
+    
+}
+.search{
+    grid-row: 527.36px/2 ;
+   grid-column: 3/4;
+}
+.image img{
+    height: 250px;
+    width: 250px;
+}
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px;  
+}
+.shortimage img{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    border: 1px solid ;
+    
+}
+.shortimage{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.img1{
+    display: grid;
+    border: 2px solid blueviolet ;
+    background-color: rgb(117, 98, 134);
+    padding: 2px;
+}
+.outergrid{
+    border: 2px solid blueviolet;
+   
+}
+.innergrid img{
+    height: 250px;
+    width: 250px;
+}
+.innergrid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+.biggerimage img{
+    height: 400px;
+    width: 100vw;
+}
+.biggerimage{
+    margin: 5px;
+}
+.innersmall i{
+    height: 30px;
+    width: 30px;
+}
+.small{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+
+
+  
+
+
+
+
